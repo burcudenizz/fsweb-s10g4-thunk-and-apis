@@ -73,7 +73,9 @@ export default function App() {
         <Route path="/favs">
           <div className="flex flex-col gap-3">
             {favs.length > 0 ? (
-              favs.map((item) => <FavItem key={item.id} title={item} />)
+              favs.map((item) => (
+                <FavItem key={item.id} id={item.id} title={item} />
+              ))
             ) : (
               <div className="bg-white p-6 text-center shadow-md">
                 Henüz bir favoriniz yok

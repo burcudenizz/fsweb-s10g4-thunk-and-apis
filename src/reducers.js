@@ -19,7 +19,6 @@ function writeFavsToLocalStorage(state) {
 }
 
 function readFavsFromLocalStorage() {
-  if (!JSON.parse(localStorage.getItem("s10g4"))) return [];
   return JSON.parse(localStorage.getItem("s10g4"));
 }
 
